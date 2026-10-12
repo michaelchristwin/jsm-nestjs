@@ -1,6 +1,8 @@
+import { ApiTags } from '@nestjs/swagger';
 import { Controller, Get, Param, Post, Body } from '@nestjs/common';
 import { CreateProfileDto } from './dto/create-profile.dto.js';
 
+@ApiTags('profiles')
 @Controller('profiles')
 export class ProfilesController {
   @Get()
